@@ -1,7 +1,8 @@
 // IMPORTING MODULE
 
 //NOTE:--------------primera parte------------------------------
-/*para ver esta parte dejar como comentarios todo el resto
+//para ver esta parte dejar como comentarios todo el resto
+/*
 //los import son parsed primero y se ejecuta primero que el codigo. todos los modulos son ejecutados en stric mode
 import "./shoppingCart.js";
 //importando varaibles y funciones de otro modulo. tambien le puedo cambiar el nombre
@@ -18,7 +19,6 @@ addToCart("bread", 5);
 //llamando a variables de otro modulo
 console.log(price, tq);
 */
-
 //NOTE:--------------segunda parte------------------------------
 //dejar como comentario la primera para que funcione la segunda.
 
