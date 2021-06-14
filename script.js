@@ -36,3 +36,26 @@ add("apples", 4);
 
 //como agregue productos al cart esto se actualiza en todos los modulos, es un live collections
 console.log(ShoppingCart.cart);
+
+//NOTE:importando de la libreria lodash
+//cloneDeep es para copiar obejtos. en la libreria esta como default exports y le puedo poner al nombre que quiera (lo deje como cloneDeep)
+import cloneDeep from "./node_modules/lodash-es/cloneDeep.js";
+
+const state = {
+  cart: [
+    { product: "bread", quantity: 5 },
+    { product: "pizza", quantity: 5 },
+  ],
+  user: { loggedIn: true },
+};
+
+//copiar con clone deep
+const stateCloneDeep = cloneDeep(state);
+state.user.loggedIn = false;
+console.log(state);
+console.log(stateCloneDeep);
+
+//copiando con JS
+// const stateClone = Object.assign({}, state);
+// state.user.loggedIn = false;
+// console.log(stateClone);

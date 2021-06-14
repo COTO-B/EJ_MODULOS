@@ -1,0 +1,23 @@
+{
+  "name": "ej_modulos",
+  "version": "1.0.0",
+  "description": "MODULOS, TOOLS, PARCEL, BABEL.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/COTO-B/EJ_MODULOS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/COTO-B/EJ_MODULOS/issues"
+  },
+  "homepage": "https://github.com/COTO-B/EJ_MODULOS#readme",
+  "dependencies": {
+    "leaflet": "^1.7.1",
+    "lodash-es": "^4.17.21"
+  }
+}
