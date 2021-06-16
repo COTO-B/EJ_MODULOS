@@ -39,7 +39,10 @@ console.log(ShoppingCart.cart);
 
 //NOTE:importando de la libreria lodash
 //cloneDeep es para copiar obejtos. en la libreria esta como default exports y le puedo poner al nombre que quiera (lo deje como cloneDeep)
-import cloneDeep from "./node_modules/lodash-es/cloneDeep.js";
+//importando sin parcel hay que poner toda la ruta
+// import cloneDeep from "./node_modules/lodash-es/cloneDeep.js";
+// importando con parcel no es necesario poner toda la ruta
+import cloneDeep from "lodash-es";
 
 const state = {
   cart: [
@@ -59,3 +62,14 @@ console.log(stateCloneDeep);
 // const stateClone = Object.assign({}, state);
 // state.user.loggedIn = false;
 // console.log(stateClone);
+
+if (module.hot) {
+  module.hot.accept();
+}
+
+console.log("hola");
+
+console.log(state.cart.find((el) => el.quantity >= 2));
+
+import "core-js/stable";
+import "regenerator-runtime/runtime";
